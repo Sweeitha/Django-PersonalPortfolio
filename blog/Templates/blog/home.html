@@ -1,0 +1,9 @@
+{% extends 'Homepage/Base.html' %}
+{% block content %}
+<h2>You are in Sweeitha's blog</h2>
+<h4>Sweeitha has written {{myblogs.count}} blog{{myblogs.count|pluralize}}</h4>
+<!--This will return Sweeitha has written 1 blog or Sweeitha has written 2 blogs-->
+{% for blog in myblogs %}
+<a href="{% url 'blog:detail' study.id %}"><h2>{{ blog.title }}</h2></a>
+{% endfor %}
+{% endblock %}

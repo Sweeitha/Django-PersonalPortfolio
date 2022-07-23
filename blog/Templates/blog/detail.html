@@ -1,0 +1,6 @@
+{{ Blog.title }}
+<p>{{ Blog.description|striptags|truncatechars:100 }}</p>
+<img src="{{ Blog.image.url }}"><br>
+{% if Blog.url %}
+<a href="{{Blog.url}}">Click me</a>
+{% endif %}
