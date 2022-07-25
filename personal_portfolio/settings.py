@@ -131,4 +131,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 try:
     from .local_settings import *
 except ImportError:
-    print("You are in prod!!") 
+    print("You are in prod!!")
